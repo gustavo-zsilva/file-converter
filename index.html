@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>File Converter</title>
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <h1>
+                Javascript File Converter
+            </h1>
+            
+            <p>Pode converter jpg, jpeg e png.</p>
+        </header>
+
+        <section>
+            <button class="convert">Escolha um arquivo para converter</button>
+            <input type="file" class="hide">
+
+            <div class="image-wrapper">
+
+                <span>Nenhuma imagem selecionada</span>
+
+                <img src="" alt="Selected Image">
+
+                <canvas id="canvas">
+                </canvas>
+            </div>
+
+            <button class="download hide">Download</button>
+        </section>
+
+        <div class="modal">
+            <header>
+                <h1>
+                    <img class="close-modal" src="https://www.flaticon.com/svg/static/icons/svg/1828/1828851.svg" alt="Quit Image">
+                    Selecione o tipo de arquivo a ser convertido.
+                </h1>
+                <p>O tipo de imagem atual é <span class="file-type"></span></p>
+            </header>
+
+            <main>
+                <ul></ul>
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
