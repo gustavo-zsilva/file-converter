@@ -85,7 +85,7 @@ function downloadImage({target}) {
     const url = canvas.toDataURL(`image/${chosenExtension.toLowerCase()}`)
 
     let a = document.createElement('a');
-    a.download = `${file.name}-converted`;
+    a.download = `converted-${file.name}`;
     a.href = url;
     a.click();
 }
