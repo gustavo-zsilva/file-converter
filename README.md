@@ -1,2 +1,4 @@
-# file-converter
- A Javascript File converter.
+# File Converter
+ This app is a simple File Converter that supports PNG, JPG and JPEG.
+ 
+ 
